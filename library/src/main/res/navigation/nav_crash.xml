@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_crash.xml"
+    app:startDestination="@id/crashListFragment">
+
+    <fragment
+        android:id="@+id/crashListFragment"
+        android:name="me.xujichang.lib.crash.ui.fragments.CrashListFragment"
+        android:label="fragment_crash_list"
+        tools:layout="@layout/fragment_crash_list">
+        <action
+            android:id="@+id/action_to_crashDetailFragment"
+            app:destination="@id/crashDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/crashDetailFragment"
+        android:name="me.xujichang.lib.crash.ui.fragments.CrashDetailFragment"
+        android:label="fragment_crash_detail"
+        tools:layout="@layout/fragment_crash_detail" />
+</navigation>

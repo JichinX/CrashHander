@@ -1,0 +1,4 @@
+include ':breakpad'
+include ':library'
+include ':app'
+rootProject.name = "CrashHander"
